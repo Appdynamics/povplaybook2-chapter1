@@ -19,3 +19,34 @@ body, p, h1, h2, h3, h4, h5, h6 { font-family:AppdSans }
 @font-face{font-family:AppdSans;src:url("https://www.appdynamics.com/content/dam/r/appdynamics/fw/fonts/woff2/aappd-font-condensed-thin.woff2") format("woff2"),url("https://www.appdynamics.com/content/dam/r/appdynamics/fw/fonts/woff2/aappd-font-condensed-thin.woff2") format("woff");font-stretch:condensed;font-weight:100}
 #header-wrapper, #homelinks { background: #4E3EB1; border-bottom-color: #4E3EB1; }
 .searchbox { background: transparent; border-color: #fff;}
+
+#sidebar {
+    background-color: #20272b;
+    position: fixed;
+    top: 0;
+    width: 300px;
+    bottom: 0;
+    left: 0;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+#sidebar ul.topics > li.parent, #sidebar ul.topics > li.active {
+    background: #0a0c0e;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+a {
+    color: #705ad2;
+}
+
+.anchor {
+    color: #705ad2;
+}
+
+a:hover {
+    color: #4E3EB1;
+}
