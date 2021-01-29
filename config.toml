@@ -1,0 +1,83 @@
+baseURL = "/"
+languageCode = "en-US"
+defaultContentLanguage = "en"
+
+title = "AppDynamics POV Playbook 2 Ch 1"
+theme = "hugo-theme-learn"
+metaDataFormat = "yaml"
+defaultContentLanguageInSubdir= "true"
+uglyurls = "true"
+enableEmoji = true
+
+[params]
+# Prefix URL to edit current page. Will display an "Edit this page" button on top right hand corner of every page. 
+# Useful to give opportunity to people to create merge request for your doc.
+# See the config.toml file from this documentation site to have an example.
+#editURL = ""
+# Author of the site, will be used in meta information
+author = "James Schneider"
+# Description of the site, will be used in meta information
+description = "AppDynamics POV Playbook 2 Chapter 2"
+# Shows a checkmark for visited pages on the menu
+showVisitedLinks = true
+# Disable search function. It will hide search bar
+disableSearch = false
+# Javascript and CSS cache are automatically busted when new version of site is generated. 
+# Set this to true to disable this behavior (some proxies don't handle well this optimization)
+disableAssetsBusting = false
+# Set this to true to disable copy-to-clipboard button for inline code.
+disableInlineCopyToClipBoard = false
+# A title for shortcuts in menu is set by default. Set this to true to disable it. 
+disableShortcutsTitle = false
+# When using mulitlingual website, disable the switch language button.
+disableLanguageSwitchingButton = true
+# Hide breadcrumbs in the header and only show the current page title
+disableBreadcrumb = false
+# Hide Next and Previous page buttons normally displayed full height beside content
+disableNextPrev = false
+# Order sections in menu by "weight" or "title". Default to "weight"
+ordersectionsby = "weight"
+# Change default color scheme with a variant one. Can be "red", "blue", "green".
+themeVariant = "mine"
+# AppDynamics EUM application key
+#eumAppKey = "AD-AAB-ABB-FZP"
+# AppDynamics EUM version
+#eumVersion = "20.9.0.3268"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[[menu.shortcuts]] 
+name = "<i class='fas fa-graduation-cap'></i> AppDynamics Documentation"
+url = "https://docs.appdynamics.com"
+weight = 10
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-chalkboard-teacher'></i> AppDynamics Advantage"
+url = "https://www.appdynamics.com/product/infrastructure-monitoring/cloud-monitoring"
+weight = 20
+
+[[menu.shortcuts]] 
+name = "<i class='fas fa-chalkboard-teacher'></i> Monitor Kubentes with Confidence"
+url = "https://www.appdynamics.com/resources/ebook/how-to-monitor-kubernetes-with-confidence"
+weight = 30
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-chalkboard-teacher'></i> 6 Business iQ Use Cases"
+url = "https://www.appdynamics.com/c/dam/r/appdynamics/general-documents/use-cases/biq-use-case-guide-2020.pdf"
+weight = 40
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-chalkboard-teacher'></i> K8s Monitoring Best Practices"
+url = "https://www.appdynamics.com/solutions/cloud/cloud-monitoring/kubernetes-monitoring/how-to-monitor-kubernetes-best-practices"
+weight = 50
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-chalkboard-teacher'></i> Scaling Kubernetes with AppD"
+url = "https://www.appdynamics.com/blog/product/scaling-kubernetes-observability/"
+weight = 60
+
+[markup]
+  defaultMarkdownHandler = "blackfriday"
+  [markup.blackFriday]
+    hrefTargetBlank = true
